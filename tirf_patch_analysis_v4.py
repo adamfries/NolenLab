@@ -501,6 +501,10 @@ def tirf_analysis(ch1spot_path, ch2spot_path, pair_path, save_path, tscale, accu
 		dist2_all.extend(dist2)
 		#ch1_raw_all.extend{ch1_allraw}
 		#ch2_raw_all.extend{ch2_allraw}
+		ch1_raw_all.extend(ch1_allraw)
+		ch2_raw_all.extend(ch2_allraw)
+
+
 
 		if i == len(ch1_frame) - 1:	
 			axall[0].plot(time1, dist1, 'o', color = 'green', alpha = 0.4, label = 'Las17')
